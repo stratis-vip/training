@@ -1,0 +1,11 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var athlete_1 = require("./athlete");
+var classes_1 = require("./classes");
+var vm = new classes_1.vo2maxClass();
+var ath = new athlete_1.athlete();
+ath.name = 'Παναγιώτης Λυπηρίδης';
+vm.bicycling = 23.1;
+ath.vo2max = vm;
+ath.vo2max.bicycling = 32;
+console.log("To \u03CC\u03BD\u03BF\u03BC\u03B1 \u03B5\u03AF\u03BD\u03B1\u03B9: " + ath.name);

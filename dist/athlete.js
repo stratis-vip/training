@@ -1,5 +1,5 @@
 "use strict";
-exports.__esModule = true;
+Object.defineProperty(exports, "__esModule", { value: true });
 var consts_1 = require("./consts");
 var fnc = require("./functions");
 //var evn = require('./events');
@@ -25,7 +25,7 @@ var athlete = (function () {
             var a = this._weight;
             if (a !== x && x > consts_1.constants.MINWEIGHT && x < consts_1.constants.MAXWEIGHT) {
                 this._weight = x;
-                fnc.updateAthlete('weight', x);
+                fnc.updateAthlete(this, 'weight', x);
             }
         },
         enumerable: true,
@@ -41,7 +41,7 @@ var athlete = (function () {
             var a = this._height;
             if (a !== x && x > consts_1.constants.MINHEIGHT && x < consts_1.constants.MAXHEIGHT) {
                 this._height = x;
-                fnc.updateAthlete('height', x);
+                fnc.updateAthlete(this, 'height', x);
             }
         },
         enumerable: true,
@@ -63,7 +63,7 @@ var athlete = (function () {
         set: function (x) {
             if (this._sex !== x) {
                 this._sex = x;
-                fnc.updateAthlete('sex', x);
+                fnc.updateAthlete(this, 'sex', x);
             }
         },
         enumerable: true,
@@ -76,7 +76,7 @@ var athlete = (function () {
         set: function (x) {
             if (this._name !== x && x.trim().length > 4 && x.trim() !== "") {
                 this._name = x.trim();
-                fnc.updateAthlete('name', x);
+                fnc.updateAthlete(this, 'name', x);
             }
         },
         enumerable: true,
@@ -92,7 +92,7 @@ var athlete = (function () {
             //x must provided in form YYYY-MM-DD
             if (this._bday !== x) {
                 this._bday = new Date(x);
-                fnc.updateAthlete('bday', x);
+                fnc.updateAthlete(this, 'bday', x);
             }
         },
         enumerable: true,
@@ -121,6 +121,7 @@ var athlete = (function () {
         set: function (x) {
             if (this._vo2max !== x) {
                 this._vo2max = x;
+                fnc.updateAthlete(this, 'vo2max', x);
             }
         },
         enumerable: true,
@@ -130,5 +131,5 @@ var athlete = (function () {
     ;
     return athlete;
 }());
+exports.athlete = athlete;
 ;
-exports["default"] = { athlete: athlete };

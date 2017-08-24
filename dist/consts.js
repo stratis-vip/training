@@ -1,5 +1,5 @@
 "use strict";
-exports.__esModule = true;
+Object.defineProperty(exports, "__esModule", { value: true });
 /*
 //https://stackoverflow.com/a/8596808/7301942
 function define(name, value) {
