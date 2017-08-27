@@ -1,0 +1,20 @@
+{
+    "compileOnSave": true,
+    "compilerOptions": {
+        "watch": true,
+        "noImplicitReturns": true,
+        "outDir": "",
+        "rootDir": "./"
+    },
+
+    "include": [
+        "src/bin/**/*",
+        "src/lib/**/*",
+        "src/routes/**/*",
+        "src/**/*"
+    ],
+    "exclude": [
+        "node_modules/**/*"
+    ]
+
+}

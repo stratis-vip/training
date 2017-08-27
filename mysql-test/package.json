@@ -1,0 +1,24 @@
+{
+  "name": "mysql-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^4.0.0",
+    "eslint": "^4.5.0",
+    "mysql": "^2.14.1"
+  },
+  "devDependencies": {
+    "@types/mysql": "0.0.34",
+    "@types/node": "^8.0.25",
+    "grunt": "^1.0.1",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-execute": "^0.2.2"
+  }
+}

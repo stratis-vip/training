@@ -1,0 +1,19 @@
+{
+    "compileOnSave": true,
+    "compilerOptions": {
+        "watch": true,
+        "noImplicitReturns": true,
+        "outDir": ""
+    },
+
+    "include": [
+        "src/lib/**/*"
+    ],
+    "exclude": [
+        "node_modules/**/*"
+    ],
+    "files": [
+        "src/app.ts"
+    ]
+
+}

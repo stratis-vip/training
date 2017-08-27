@@ -1,5 +1,5 @@
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
+exports.__esModule = true;
 var athlete_1 = require("./athlete");
 var classes_1 = require("./classes");
 var vm = new classes_1.vo2maxClass();
